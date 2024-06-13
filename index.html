@@ -1,0 +1,1089 @@
+<!-- Start of file -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <!-- Head Component of the html file -->
+
+  <head>
+    <!-- character coding meta tag -->
+    <meta charset="UTF-8" />
+
+    <!-- icon on the title link -->
+    <link rel="icon" type="image/png" href="./Icons/Icon1.png" />
+
+    <!-- viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title tag -->
+    <title>Nikhil Pathak Portfolio</title>
+
+    <!-- css file importing link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- linking the fontawsome-icon style sheet -->
+
+    <!-- This files are fontawesome icons files which i have downloaded for offline and attached it. -->
+     <!-- So The fontawesome icons are used every where you see -->
+    <link rel="stylesheet" href="./font-awesome-css/all.min.css" />
+    <link rel="stylesheet" href="./font-awesome-css/fontawesome.min.css" />
+  </head>
+  <!-- head end here -->
+
+  <!-- body starts here -->
+
+  <body>
+    <!-- header starts here -->
+    <header>
+      <!-- ================================NavBar=================== -->
+      <nav>
+        <!-- Nav Logo -->
+        <h4 id="nav_logo" class="fadeIn">Nikhil Pathak</h4>
+
+        <!-- Dark and Light static mode button -->
+        <div id="theme_toggle_div" class="fadeIn">
+          <!-- Moon Image -->
+          <img
+            src="./Icons/moon-svgrepo-com.svg"
+            width="30"
+            height="20"
+            alt="moons_icon"
+            id="moon_icon"
+          />
+          
+          <!-- Sun image -->
+          <img
+            src="./Images/Sun.png"
+            width="30"
+            height="20"
+            alt="suns_icon"
+            id="sun_icon"
+          />
+        </div>
+
+        <!-- =================================Nav Links========================== -->
+
+        <!-- They will hide as screen size goes below 1000px or hide in medium large screens -->
+        <ul type="none" id="nav_links" class="fadeIn">
+          <li>
+            <a href="#Home" class="fadeIn" style="animation-delay: 400ms">
+              <i class="fa-solid fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#About" class="fadeIn" style="animation-delay: 800ms">
+              <i class="fa-solid fa-address-card"></i>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="fadeIn" style="animation-delay: 800ms">
+              <i class="fa-regular fa-rectangle-list"></i>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Certifications"
+              class="fadeIn"
+              style="animation-delay: 800ms"
+            >
+              <i class="fa-solid fa-user-tie"></i>
+              Certifications
+            </a>
+          </li>
+          <li>
+            <a href="#Service" class="fadeIn" style="animation-delay: 800ms">
+              <i class="fa-solid fa-briefcase"></i>
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#Portfolio" class="fadeIn" style="animation-delay: 800ms">
+              <i class="fa-solid fa-marker"></i>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#Contact" class="fadeIn" style="animation-delay: 800ms">
+              <i class="fa-solid fa-address-book"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <!-- Nav link toggle button only visible from 1000px below screen sizes or medium large screen sizes  -->
+        <!-- this button will toggle the visibility of nav-links for more please visit script.js file -->
+        <button id="nav_toggler">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ==============================================================Main======================================================================= -->
+    <main>
+      <!--======================================= Home =============================================-->
+      <article id="Home">
+        <!-- Profile info like name profession social links starts here -->
+        <!-- divided into two section one will have profile info and other will have profile image -->
+        <section id="profile_Info">
+          <!-- Coming-In animation class is applied tp section for more please visit style.css-->
+          <section class="Coming-In">
+            <h4 style="font-size: 1.5rem">Hello</h4>
+            <h2 style="font-size: 4.1rem">I'm Nikhil Pathak</h2>
+            <p id="profession" class="fadeIn">Full Stack Developer</p>
+          </section>
+
+          <!-- FadeIn animation class is applied which is created in style.css -->
+
+          <p id="profile-desc" class="fadeIn" style="animation-delay: 800ms">
+            An Exuberant and an Spirited coder with an creative mind to focus on
+            detail and to produce quality work.
+          </p>
+          <p
+            class="bold-font fadeIn"
+            style="font-size: medium; animation-delay: 1000ms; opacity: 0"
+          >
+            From Madhya Pradesh
+          </p>
+
+          <!-- ================================Social icon links with naviagating links provided each will open new tab when clicked====================== -->
+          <section>
+            <a
+              href="https://www.facebook.com/nikhil.pathak.549436"
+              target="_blank"
+            >
+              <li
+                class="fa-brands fa-facebook social-icon fadeIn"
+                style="animation-delay: 100ms"
+              ></li>
+            </a>
+            <a href="https://www.instagram.com/lucifer60_2/" target="_blank">
+              <i
+                class="fa-brands fa-instagram social-icon fadeIn"
+                style="animation-delay: 200ms"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nikhil-pathak-28760b17b/"
+              target="_blank"
+            >
+              <li
+                class="fa-brands fa-linkedin-in social-icon fadeIn"
+                style="animation-delay: 300ms"
+              ></li>
+            </a>
+            <a href="https://github.com/11804800" target="_blank">
+              <li
+                class="fa-brands fa-github social-icon fadeIn"
+                tyle="animation-delay: 350ms;"
+              ></li>
+            </a>
+          </section>
+
+          <!-- /* Download Button for downloading resume */ -->
+          <a id="download-btn" href="./resume.pdf" download class="fadeIn"
+            >Download Resume
+            <li class="fa-solid fa-download" style="font-size: x-small"></li>
+          </a>
+        </section>
+
+        <!-- ==============================================profile img div starts here =======================================-->
+        <section id="profile">
+          <!-- Coming-In animation class is applied -->
+          <!-- this same image and profile-img-div is used in about image also -->
+
+          <section
+            class="profile-img-div Coming-In"
+            style="animation-delay: 400ms"
+          >
+            <img
+              src="./Images/profile-img.png"
+              alt="profile-img"
+              class="profile-img"
+            />
+          </section>
+        </section>
+      </article>
+
+      <!--=========================================== About ============================================================ -->
+      <article id="About">
+        <!-- This divided into two section first contain image and second about the profile -->
+        <section class="profile_img">
+          <div class="profile-img-div fadeIn">
+            <img
+              src="./Images/profile-img.png"
+              alt="profile-img"
+              class="profile-img"
+              style="width: 90%"
+            />
+          </div>
+        </section>
+
+        <!-- ====================================About description==========================  -->
+
+        <!-- Animation hovering effect is also applied to all the elements -->
+        <section id="about-desc" class="Coming-In">
+          <h2>About <span>Me</span></h2>
+          <p id="about-tagline" style="font-size: 1.4rem">
+            Code, Eat, Sleep and Repeat
+          </p>
+          <section>
+            <p class="fadeIn" style="animation-delay: 400ms">
+              Hello I'm Nikhil Pathak, I am a Full-Stack Developer. I can yied
+              clean, well-written and well organized web-designs. I build
+              interactive and User-friendly, Device-friendly and Responsive
+              web-designs that support Responsiveness on muliple media-devices.
+              I also Make interactive web-designs with the help of animation and
+              focuses more on enhancing the performance of website and Other
+              than that I also have excellence in various programming languages,
+              Software developing methods and Principles. I've excel in Problem
+              Solving and Critical Thinking.
+            </p>
+            <p class="fadeIn" style="animation-delay: 600ms">
+              I am self-confident, enthusiastic in nature, Creative and I always
+              Challenge my skills. I always enjoy working with people and I am
+              Collaborative problem Solver that pays attention to the every
+              single detail.
+            </p>
+          </section>
+
+          <!-- This is read more button which is used multiple times in this project -->
+          <button
+            class="read-more-btn fadeIn"
+            class="fadeIn"
+            style="animation-delay: 800ms"
+            id="about-read-more-btn"
+          >
+            Read More
+          </button>
+        </section>
+      </article>
+
+
+      <!--=================================================== Skills======================================================= -->
+      <article id="skills">
+
+        <!-- This is divided into two section first for technical skills and second is for professional skills  -->
+        <h1 class="fadeIn">My <span>Skills</span></h1>
+        <section id="skills-section">
+
+          <!-- ======================================Technical skill section===================== -->
+
+          <!-- In this I have used linear progress bar to show the percentage  -->
+
+          <!-- Animation and hovering effect is also applied to all the elements -->
+          <section id="tech-skills">
+            <section class="skill-box Coming-In" style="animation-delay: 100ms">
+              <section>
+                <p>Html/Css</p>
+                <p>85%</p>
+              </section>
+              <div class="linear-progess-bar" style="width: 85%"></div>
+            </section>
+            <section class="skill-box Coming-In" style="animation-delay: 150ms">
+              <section>
+                <p>JavaScript</p>
+                <p>76%</p>
+              </section>
+              <div class="linear-progess-bar" style="width: 76%"></div>
+            </section>
+            <section class="skill-box Coming-In" style="animation-delay: 250ms">
+              <section>
+                <p>TypeScript</p>
+                <p>54%</p>
+              </section>
+              <div class="linear-progess-bar" style="width: 54%"></div>
+            </section>
+            <section class="skill-box Coming-In" style="animation-delay: 300ms">
+              <section>
+                <p>ReactJs</p>
+                <p>75%</p>
+              </section>
+              <div class="linear-progess-bar" style="width: 75%"></div>
+            </section>
+            <section class="skill-box Coming-In" style="animation-delay: 400ms">
+              <section>
+                <p>NodeJs</p>
+                <p>71%</p>
+              </section>
+              <div class="linear-progess-bar" style="width: 71%"></div>
+            </section>
+            <section class="skill-box Coming-In" style="animation-delay: 450ms">
+              <section>
+                <p>MongoDB</p>
+                <p>81%</p>
+              </section>
+              <div class="linear-progess-bar" style="width: 81%"></div>
+            </section>
+            <section class="skill-box Coming-In" style="animation-delay: 500ms">
+              <section>
+                <p>Tailwind Css</p>
+                <p>61%</p>
+              </section>
+              <div class="linear-progess-bar" style="width: 61%"></div>
+            </section>
+            <section class="skill-box Coming-In" style="animation-delay: 600ms">
+              <section>
+                <p>Java</p>
+                <p>53%</p>
+              </section>
+              <div class="linear-progess-bar" style="width: 53%"></div>
+            </section>
+          </section>
+
+
+          <!--================================= Professinal skills section ==========================-->
+
+          <!-- In this i have used circular progess bar to show case my skills efficiency -->
+
+          <section id="prof-skills">
+            <section
+              class="prof-skill-box fadeIn"
+              style="animation-delay: 100ms"
+            >
+
+            <!-- Svg is used to create a two circle inside it -->
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+
+                <!-- Used stoke to show case the bar color in dark -->
+                <circle
+                  class="circular-progress-bar"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                ></circle>
+
+                <!-- this circle whill fill the percentage of skills in blue color -->
+                <circle
+                  class="path"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  style="stroke-dashoffset: 100"
+                ></circle>
+              </svg>
+              <p class="percentage">76%</p>
+              <h4>Team Work</h4>
+            </section>
+            <section
+              class="prof-skill-box fadeIn"
+              style="animation-delay: 200ms"
+            >
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle
+                  class="circular-progress-bar"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                ></circle>
+                <circle
+                  class="path"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  style="stroke-dashoffset: 80"
+                ></circle>
+              </svg>
+              <p class="percentage">78%</p>
+              <h4>Creativity</h4>
+            </section>
+            <section
+              class="prof-skill-box fadeIn"
+              style="animation-delay: 300ms"
+            >
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle
+                  class="circular-progress-bar"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                ></circle>
+                <circle
+                  class="path"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  style="stroke-dashoffset: 50"
+                ></circle>
+              </svg>
+              <p class="percentage">81%</p>
+              <h4>Crtical Thinking</h4>
+            </section>
+            <section
+              class="prof-skill-box fadeIn"
+              style="animation-delay: 100ms"
+            >
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle
+                  class="circular-progress-bar"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                ></circle>
+                <circle
+                  class="path"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  style="stroke-dashoffset: 110"
+                ></circle>
+              </svg>
+              <p class="percentage">75%</p>
+              <h4>Problem Solving</h4>
+            </section>
+            <section
+              class="prof-skill-box fadeIn"
+              style="animation-delay: 200ms"
+            >
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle
+                  class="circular-progress-bar"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                ></circle>
+                <circle
+                  class="path"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  style="stroke-dashoffset: 60"
+                ></circle>
+              </svg>
+              <p class="percentage">80%</p>
+              <h4>Communication</h4>
+            </section>
+            <section
+              class="prof-skill-box fadeIn"
+              style="animation-delay: 300ms"
+            >
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle
+                  class="circular-progress-bar"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                ></circle>
+                <circle
+                  class="path"
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  style="stroke-dashoffset: 50"
+                ></circle>
+              </svg>
+              <p class="percentage">81%</p>
+              <h4>Time-Management</h4>
+            </section>
+          </section>
+        </section>
+      </article>
+
+      <!-- Skills Article Ends Here -->
+
+      <!-- ===============================================Certification=================================================-->
+      <article id="Certifications">
+
+        <!-- Heading -->
+        <h2 class="zoom-out">Certifications</h2>
+
+        <!-- Section that contains certificate cards -->
+        <section id="certification-section">
+
+          <!-- Certificate-card class is used to design cards -->
+          <section
+            class="certificate-card fadeIn"
+            style="animation-delay: 100ms"
+          >
+          <!-- Heading -->
+            <h1>
+
+              <!-- Institute name -->
+              <span>Coursera</span>
+              <!-- course name -->
+               Frontend Web-UI framewok and tools
+              Bootstrap-4
+            </h1>
+
+            <!-- Certficate image -->
+            <img
+              src="./Images/Certificates/coursera.png"
+              width="320"
+              height="320"
+              alt="courser-certificate"
+            />
+
+            <!-- This link will open the certificate image  in new tab-->
+            <section>
+              <a href="./Images/Certificates/coursera.png" target="_blank"
+                >View</a
+              >
+            </section>
+          </section>
+
+          <!-- =============2=========== -->
+          <section
+            class="certificate-card fadeIn"
+            style="animation-delay: 200ms"
+          >
+            <h1><span>Udemy</span> The Advanced Web Development Bootcamp</h1>
+            <img
+              src="./Images/Certificates/Udemy.png"
+              width="320"
+              height="320"
+              alt="Udemy-certificate"
+            />
+            <section>
+              <a href="./Images/Certificates/Udemy.png" target="_blank">View</a>
+            </section>
+          </section>
+          <!-- =============3=========== -->
+          <section
+            class="certificate-card fadeIn"
+            style="animation-delay: 300ms"
+          >
+            <h1>
+              <span>Selenium Tutorial</span> Software Testing Using Selenium
+            </h1>
+            <img
+              src="./Images/Certificates/selenium.png"
+              width="320"
+              height="320"
+              alt="Selenium-certificate"
+            />
+            <section>
+              <a href="./Images/Certificates/selenium.png" target="_blank"
+                >View</a
+              >
+            </section>
+          </section>
+
+          <!-- =============4=========== -->
+          <section
+            class="certificate-card fadeIn"
+            style="animation-delay: 400ms"
+          >
+            <h1>
+              <span>JOICS</span> JOICS Publication Certificate for Final Year
+              Project
+            </h1>
+            <img
+              src="./Images/Certificates/Rsa.jpg"
+              width="320"
+              height="320"
+              alt="RSA-certificate"
+            />
+            <section>
+              <a href="./Images/Certificates/Rsa.jpg" target="_blank">View</a>
+            </section>
+          </section>
+          <!-- =============5=========== -->
+          <section
+            class="certificate-card fadeIn"
+            style="animation-delay: 450ms"
+          >
+            <h1>
+              <span>Intership-Studio</span> Web Development Using Html5, Css3
+              and javascript
+            </h1>
+            <img
+              src="./Images/Certificates/Intership.png"
+              width="320"
+              height="320"
+              alt="intership-studio-certificate"
+            />
+            <section>
+              <a href="./Images/Certificates/Intership.png" target="_blank"
+                >View</a
+              >
+            </section>
+          </section>
+
+          <!-- =============6 =========== -->
+          <section
+            class="certificate-card fadeIn"
+            style="animation-delay: 500ms"
+          >
+            <h1><span>E-Box</span> Oject Oriented Programming Using Java</h1>
+            <img
+              src="./Images/Certificates/ebox.png"
+              width="320"
+              height="320"
+              alt="ebox-certificate"
+            />
+            <section>
+              <a href="./Images/Certificates/ebox.png" target="_blank">View</a>
+            </section>
+          </section>
+        </section>
+      </article>
+      <!-- Certifications Section Ends Here -->
+
+      <!--============================================================================ Service======================================================-->
+      <article id="Service">
+
+        <!-- Heading -->
+        <h2 class="zoom-out">Our Services</h2>
+
+        <!-- Section that contains service cards -->
+        <section id="service-Section">
+
+          <!-- FadeIn animation and hovering animation is used -->
+          <section class="cards fadeIn" style="animation-delay: 100ms">
+
+            <!-- icon -->
+            <li class="fa-solid fa-code card-icon"></li>
+
+            <!-- heading -->
+            <h2>Web Development</h2>
+
+            <!-- Description -->
+            <p>
+              I can Develop Creative, Well Designed and Responsive Web Designs
+              that will adapt to different media-devices of differnt screen
+              sizes and That will be interactive in nature and will adapt
+              accoring to the User and will give better User experience.
+            </p>
+            <p>
+              I can Write clean and well organized Code. I also Make interactive
+              web-designs with the help of animation and focuses more on
+              enhancing the performance of website by using responsive images,
+              Optimizing the Code and Minimal Use of Http requests.
+            </p>
+
+            <!-- Readmore button -->
+            <button class="read-more-btn fadeIn">Read More</button>
+
+          </section>
+
+          <!-- Rest all are same -->
+
+          <!-- =============2=========== -->
+          <section class="cards fadeIn" style="animation-delay: 200ms">
+            <i class="fa-solid fa-pen-fancy card-icon"></i>
+            <h2>Web Designs</h2>
+            <p>
+              I am Expert Web Designer That Can Design Robust, Asthetic,
+              Creative, Well-designed, Organised, Well-written, Responsive and
+              Eye Catching web-designs That can enhance the User's experience
+              and will adopt accoring to the user need.
+            </p>
+            <p>
+              I can design the web-apps that are visually appealing in nature,
+              Clean and have Standard fonts-family and will be SEO and Screen
+              Reader friendly and Visible to Color Blind People also by avoiding
+              the use of sharp colors and Complex Backgrounds.
+            </p>
+            <button class="read-more-btn fadeIn">Read More</button>
+          </section>
+
+          <!-- =============3=========== -->
+          <section class="cards fadeIn" style="animation-delay: 300ms">
+            <i class="fa-solid fa-database card-icon"></i>
+            <h2>Backend Service</h2>
+            <p>
+              I Can Easily Design an Secure, Scalable, Memory efficient, Robust
+              Database architecture that could easily store a large amount of
+              information and will maintain the data intigrity and will
+              Consistently serve accordingly. I can also enhancing the database
+              accoring to needs in the project.
+            </p>
+            <p>
+              I am also an expert Backend developer that can manage the large
+              amount of data and store them in database storage. I've expertise
+              in managing MongoDB and Mysql database. I can also perform data
+              analysis and can sustain the Data Intigrity.
+            </p>
+            <button class="read-more-btn fadeIn">Read More</button>
+          </section>
+
+          <!-- =============4=========== -->
+          <section class="cards fadeIn" style="animation-delay: 400ms">
+            <i class="fa-solid fa-mobile card-icon"></i>
+            <h2>Mobile</h2>
+            <p>
+              Expert in developing responsive web applications and also, I can
+              Develop cross platform mobile applications that are responsive and
+              can easily adaptive to different media-devices with different
+              screen sizes.
+            </p>
+            <p>
+              I also focus on enhancing the web-app perfmance like Loading,
+              Navigating and Processing Speed. I also focus on making web-app
+              resources responsive so, That they are easily accessible even on
+              low end devices and run freely without taking much time to load.
+            </p>
+            <button class="read-more-btn fadeIn">Read More</button>
+          </section>
+        </section>
+      </article>
+      <!-- Service Section Ends Here -->
+
+      <!--==============================================================================Projects================================================================== -->
+      <article id="Portfolio" class="article-WH">
+        <h2 class="Coming-In">Latest <span>Projects</span></h2>
+
+        <!-- This section contains all the cards that conatct the project details -->
+        <section id="project-section">
+
+          <!-- this is cards that contains project info and demo btn -->
+          <section
+            class="project-sub-section fadeIn"
+            style="animation-delay: 100ms"
+          >
+          <!-- project heading -->
+            <h3>React Restaurant Project</h3>
+
+            <!-- project image -->
+            <img
+              src="./Images/Project-images/Project1.png"
+              alt="react-restaurent-project"
+              class="project-img"
+            />
+            <div>
+              <!-- project github link button -->
+              <a
+                href="https://github.com/11804800/React-restaurant.git"
+                class="github-link"
+                >Demo <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </section>
+
+          <!-- =============2=========== -->
+          <section
+            class="project-sub-section fadeIn"
+            style="animation-delay: 200ms"
+          >
+            <h3>Restaurant Api</h3>
+            <img
+              src="./Images/Project-images/Project2.jpg"
+              alt="Restaurant-api project"
+              class="project-img"
+            />
+            <div>
+              <a
+                href="https://github.com/11804800/Resturantapi.git"
+                class="github-link"
+                >Demo <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </section>
+
+          <!-- =============3=========== -->
+          <section
+            class="project-sub-section fadeIn"
+            style="animation-delay: 300ms"
+          >
+            <h3>Ecommerce website Using Html Css Js</h3>
+            <img
+              src="./Images/Project-images/Project3.png"
+              alt="intership-studio-project"
+              class="project-img"
+            />
+            <div>
+              <a
+                href="https://github.com/11804800/Internship.git"
+                class="github-link"
+                >Demo <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </section>
+
+          <!-- =============4=========== -->
+          <section
+            class="project-sub-section fadeIn"
+            style="animation-delay: 350ms"
+          >
+            <h3>Animated Websited Project Using Html,Css,Js and GSAP</h3>
+            <img
+              src="./Images/Project-images/Project4.png"
+              alt="animated-website-project"
+              class="project-img"
+            />
+            <div>
+              <a
+                href="https://github.com/11804800/Animated.git"
+                class="github-link"
+                >Demo <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </section>
+
+          <!-- ==============5=================== -->
+          <section
+            class="project-sub-section fadeIn"
+            style="animation-delay: 400ms"
+          >
+            <h3>React Ecommerce Website</h3>
+            <img
+              src="./Images/Project-images/Project5.png"
+              alt="react-ecommerce-project"
+              class="project-img"
+            />
+            <div>
+               <!-- this link will not work beacause project i'm working on still to improve some ui and animation parts -->
+              <a href="#" class="github-link"
+                >Demo <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </section>
+
+          <!-- =============6=========== -->
+          <section
+            class="project-sub-section fadeIn"
+            style="animation-delay: 450ms"
+          >
+            <h3>React Message Chatting Website Using Socket.io</h3>
+            <img
+              src="./Images/Project-images/Project6.png"
+              alt="react-restaurent-project"
+              class="project-img"
+            />
+            <div>
+
+              <!-- this link will not work beacause project i'm working on still to improve authentication part-->
+              <a href="#" class="github-link"
+                >Demo <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </section>
+
+          <!-- =============7=========== -->
+          <section
+            class="project-sub-section fadeIn"
+            style="animation-delay: 500ms"
+          >
+            <h3>Html,Css Blog Website</h3>
+            <img
+              src="./Images/Project-images/Project7.png"
+              alt="react-restaurent-project"
+              class="project-img"
+            />
+            <div>
+              <a
+                href="https://github.com/11804800/Html-Project1.git"
+                class="github-link"
+                >Demo <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </section>
+        </section>
+      </article>
+      <!-- Projects Section Ends Here -->
+
+      <!--====================================================================== Contact========================================================-->
+      <article id="Contact" class="article-WH">
+
+        <!-- Contact Heading -->
+        <h2 class="fadeIn">Contact <span>Me!</span></h2>
+        <p class="zoom-out" style="animation-delay: 600ms">
+          Get in touch with me
+        </p>
+
+        <!-- Contact details like phone number email-id and city name -->
+        <section id="contact-details-section">
+          <section class="contact-box fadeIn" style="animation-delay: 100ms">
+            <p class="head">
+              <i class="fa-solid fa-phone"></i>
+              Call Me
+            </p>
+            <p class="tail">+91 8417814745</p>
+          </section>
+          <section class="contact-box fadeIn" style="animation-delay: 200ms">
+            <p class="head">
+              <i class="fa-solid fa-envelope"></i>
+              Email
+            </p>
+            <p class="tail">NikhilPathak2602@gmail.com</p>
+          </section>
+          <section class="contact-box fadeIn" style="animation-delay: 300ms">
+            <p class="head">
+              <i class="fa-solid fa-location-dot"></i>
+              Location
+            </p>
+            <p class="tail">Shahdol, India</p>
+          </section>
+        </section>
+
+        <!-- ===================================================From to contact me========================= -->
+        <form id="contact-form" class="fadeIn" style="animation-delay: 500ms">
+
+          <!-- form section to make two inputs together -->
+          <section class="contact-form-div">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="form-input"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="form-input"
+              required
+            />
+          </section>
+
+          <!-- form section to make two inputs together -->
+          <section class="contact-form-div">
+            <input
+              type="email"
+              placeholder="Email-Address"
+              class="form-input"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Mobile Number"
+              class="form-input"
+              required
+            />
+          </section>
+          <!-- ===========Message input Box ========-->
+          <textarea
+            placeholder="Write your Query"
+            rows="12"
+            cols="44"
+            id="message-box"
+          ></textarea>
+          
+          <!--================= Form submit btn=========== -->
+          <input
+            type="submit"
+            value="Send Message"
+            id="submit-btn"
+            class="fadeIn"
+          />
+        </form>
+      </article>
+      <!-- Contact Section Ends Here -->
+    </main> 
+
+    <!--======================================================================== Main ends here===================================================================== -->
+
+    <!--================================================================== footer =================================================================================================================-->
+    <footer>
+      <article id="footer-article">
+
+        <!-- About the website -->
+        <section
+          class="footer-box fadeIn"
+          style="align-items: center; justify-content: center"
+        >
+          <h2 class="bold-font">My Portfolio</h2>
+          <p class="small-font">
+            I'm Nikhil Pathak and I'm an Exuberant and an Spirited coder with an
+            creative mind to focus on detail and to produce quality work.
+          </p>
+        </section>
+
+         <!-- Nav Links for Navigating  -->
+        <section class="footer-box fadeIn" style="animation-delay: 500ms">
+          <h2>Links</h2>
+          <ul type="none" id="footer-links">
+            <li>
+              <a href="#Home">Home</a>
+            </li>
+            <li>
+              <a href="#About">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#Service">Service</a>
+            </li>
+            <li>
+              <a href="#Certifications">Certifications</a>
+            </li>
+            <li>
+              <a href="#Portfolio">Projects</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact Me</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Contact section like phone-no email and social links and send message option -->
+
+        <section class="footer-box fadeIn" style="animation-delay: 700ms">
+
+          <!-- heading -->
+          <h2>Get In Touch</h2>
+
+          <!--====================== Social links with font-awesome icons ======== -->
+          <section id="footer-social-links">
+            <a href="https://www.instagram.com/lucifer60_2/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/nikhil.pathak.549436">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com/11804800">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nikhil-pathak-28760b17b/">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </section >
+
+          <!-- Phone Number with call button with hover and active pesudo class -->
+          <section id="call-div" class="fadeIn" style="animation-delay: 800ms">
+            <p class="font"><i class="fa-solid fa-phone"></i>+91 8417814745</p>
+            <button id="call-btn" class="fadeIn" style="animation-delay: 800ms">
+              Call
+            </button>
+          </section>
+
+          <!-- Gmail id provided -->
+          <section id="email-div" class="fadeIn" style="animation-delay: 850ms">
+            <p class="font" style="font-size: 0.9rem">
+              <i class="fa-solid fa-envelope"></i>
+              NikhilPathak2602@gmail.com
+            </p>
+          </section>
+
+          <!-- form for send message or text to the email address -->
+          <form>
+            <textarea
+              cols="34"
+              rows="1"
+              type="text"
+              placeholder="Enter Your Message"
+              id="footer-message-box"
+              class="fadeIn"
+              style="animation-delay: 900ms"
+              required
+            ></textarea>
+            
+            <!-- Send Message button -->
+            <input
+              type="submit"
+              value="Send Message"
+              id="send-btn"
+              class="fadeIn"
+              style="animation-delay: 900ms"
+            />
+          </form>
+        </section>
+      </article>
+      <!-- ============================================copyright section name================================= -->
+      <section id="CR-section">
+        <p>@2024 Nikhil-Pathak-Portfolio All rights are Reserved</p>
+      </section>
+    </footer>
+    <!-- footer ends here -->
+
+    <!-- Using the javascript file  -->
+
+    <!-- ========================================attaching the js file in it ====================================-->
+     <!-- please visit script.js file  -->
+    <script src="script.js"></script>
+  </body>
+  <!-- body ends here -->
+</html>
+
+<!-- End of file -->

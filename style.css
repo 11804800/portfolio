@@ -1,0 +1,1640 @@
+/* Setting the box size border box */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* setting the font family and overflow on x-axis hidden */
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* setting the universal anchor tag css */
+a {
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+
+/* Setting the main tag css */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 59px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* ==========================================================Header================================================================ */
+
+
+/* header tag */
+header {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+
+
+/* Nav Tag */
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;  
+  padding: 3px 12px;
+  flex-wrap: nowrap;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* unordered list inside the nav */
+nav ul {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding: 14px;
+}
+/* nav's ul list items */
+nav ul li {
+  filter: none;
+  cursor: pointer;
+}
+
+
+/* links present on the nav bar */
+nav ul li a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap:2px;
+  width: fit-content;
+  color:navy;
+  font-weight: 600;
+  opacity: 0;
+}
+
+
+/* hover pesudo class for anchor tags on nav bar unordered list */
+nav ul li a:hover
+{
+  border-bottom: 2px solid navy;
+}
+
+
+/* this effect will show when user will click on nav links */
+nav ul li a:active
+{
+  background: navy;
+border-radius: 3px;
+color:white;
+}
+
+
+/* Nav Logo Nikhil Pathak */
+/* Id selector */
+#nav_logo {
+  font-size: 1.4rem;
+  width: fit-content;
+  color: navy;
+  padding: 2px 6px;
+  opacity: 0;
+}
+
+/* hover peusdo class on nav-logo */
+#nav_logo:hover
+{
+  background-color: navy;
+  border-radius: 4px;
+  color: white;
+}
+
+/* toggle buttonn background and shape */
+#theme_toggle_div {
+  display: flex;
+  width: 60px;
+  align-items: center;
+  height: 26px;
+  border-radius: 16px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+/* to set icon visibilty of dark and light mode btn like moon and sun */
+.icon-active
+{
+  visibility: hidden;
+}
+
+
+/* this indicated dark button */
+#moon_icon {
+  background: white;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+/* this indicated light btn */
+#sun_icon {
+  background-color: black;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+
+/* this will apply when the user will click the dark-light mode btn */
+.theme_div_toggle {
+  justify-content: end;
+  background: #000;
+}
+
+/* this is nav-bar toggle button this is visible in medium large screen */
+/* less than equal to 1000px */
+#nav_toggler {
+  border: none;
+  outline: none;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 128,0.6);
+  border-radius: 4px;
+  display: none;
+  padding:4px 6px;
+  font-size: 1.4rem;
+  color:navy
+}
+
+/* hover effect on navbar toggle btn */
+#nav_toggler:hover{
+  background-color: navy;
+  color:white
+}
+#nav_toggler:active,
+#nav_toggler:focus {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* this will show like a drop down animation for nav links */
+.nav_toggle_animation {
+  height: fit-content;
+  display: flex;
+  transition: all ease 5.5s;
+}
+/* =====================================Home ============================================= */
+#Home {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#profile {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: left;
+  padding: 12px 55px;
+}
+
+
+.profile-img-div {
+  width: 90%;
+  height: 90%;
+  opacity: 0;
+}
+
+.profile-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.4s;
+}
+
+.profile-img:hover
+{
+  transform: scale(1.1);
+}
+
+#profile_Info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 12px 55px;
+  gap: 14px;
+}
+#profile_Info section:nth-child(1)
+{
+  padding-bottom: 4px;
+  opacity: 0;
+}
+
+#profile_Info section
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#profile_Info section h4:hover
+{
+  background-color: navy;
+  color:white;
+  width: fit-content;
+}
+#profile_Info section h2:hover
+{
+  background-color: navy;
+  color:white;
+  width: fit-content;
+}
+
+#profile-desc:hover
+{
+  color:black
+}
+
+
+/* Download Button for downloading resume */
+#download-btn {
+  background-color: blueviolet;
+  width: fit-content;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 4px;
+  box-shadow: 0 0 15px blueviolet;
+  opacity: 0;
+}
+
+#download-btn:hover {
+  background-color: white;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+}
+
+#download-btn:active {
+  box-shadow: none;
+}
+
+
+/* profile description  */
+#profile-desc {
+  font-weight: 500;
+  width: 50%;
+  font-size: 0.9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+}
+
+
+#profession {
+  font-weight: 700;
+  color: rgb(128, 51, 200);
+  font-size: larger;
+  padding: 2px 6px;
+  opacity: 0;
+}
+
+#profession:hover
+{
+  background-color: blueviolet;
+  color:white;
+  width:fit-content;
+  border-radius: 4px;
+}
+
+/* social links icon */
+.social-icon{
+  font-size: 1.3rem;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 0 0 15px blueviolet;
+  opacity: 0;
+}
+
+.social-icon:hover
+{
+  background-color: white;
+  color: blueviolet;
+}
+.social-icon:active
+{
+  background-color: white;
+  color: blueviolet;
+}
+
+/* =============================================About========================================*/
+
+#About {
+  background: rgb(250, 252, 255);
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#about-desc {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px 16px;
+}
+#about-desc h2
+{
+  font-size: 2.5rem;
+}
+
+#about-desc h2 span
+{
+  color: blueviolet;
+}
+
+#about-tagline:hover
+{
+  background-color: navy;
+  color:white
+}
+
+#about-desc h2:hover{
+  background-color: navy;
+  color:white
+}
+
+#about-desc section 
+{
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+  padding: 8px 0;
+}
+
+#about-desc section p
+{
+  opacity: 0;
+}
+#about-desc section p:hover
+{
+  color:#595555
+}
+
+#about-desc p
+{
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+/* ========================================Certification ==============================================*/
+
+#Certifications
+{
+  width: 100dvw;
+  height:100%;
+  padding: 6px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#Certifications h2
+{
+  font-size: 2rem;
+}
+
+#Certifications h2:hover
+{
+  background: navy;
+  color:white
+}
+
+#certification-section
+{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  width:100%;
+  height:100%;
+  padding: 46px 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* //certificate cards */
+.certificate-card
+{
+  width:31%;
+  height:100%;
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+
+
+/* hover effect on cards */
+.certificate-card:hover
+{
+  box-shadow: 0 0 5px rgb(63, 120, 5),0 0 10px rgb(63, 112, 14) ,0 0 20px rgb(57, 105, 10),0 0 40px rgb(85, 159, 11);
+}
+
+.certificate-card h1
+{
+  width: 100%;
+  padding: 6px 4px;
+  background-color: #f3eeee;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.certificate-card h1 span
+{
+  padding: 2px 6px;
+  background-color: blueviolet;
+  color: white;
+  font-size: .6rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+
+/* card image */
+.certificate-card img
+{
+  object-fit: contain;
+  width: 100%;
+  height: 300px;
+}
+
+.certificate-card section
+{
+  width: 100%;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3eeee;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.certificate-card a
+{
+  color: white;
+  background-color: navy;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: .8rem;
+  width: fit-content;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card a:hover
+{
+  background-color: white;
+  color: navy;
+  border:1px solid navy;
+}
+
+.certificate-card a:active
+{
+  background-color: white;
+  color: navy;
+  border:1px solid navy;
+  box-shadow: none;
+}
+
+/* Certification section ends here */
+
+/* ========================================Service============================*/
+
+#Service {
+  width: 100dvw;
+  background: rgb(250, 252, 255);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+}
+#service-Section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 2 2 310px;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* service cards  */
+.cards {
+  width: 26.5%;
+  min-height: fit-content;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  align-items: center;
+  padding: 48px 6px;
+  background-color: rgb(242, 247, 250);
+  opacity: 0;
+}
+
+.cards p
+{
+  padding: 6px;
+  text-align: center;
+  font-weight: 500;
+  color: #5a5656;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: .9rem;
+}
+
+
+/* hover effect on cards */
+.cards:hover{
+    box-shadow: 0 0 5px rgb(199, 205, 253),0 0 10px rgb(199, 205, 253), 0 0 20px rgb(199, 205, 253),0 0 40px rgb(199, 205, 253);
+}
+
+
+/* this read more btn css class is used in evry read-more btn */
+.read-more-btn
+{
+  opacity: 0;
+    width: fit-content;
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: .7rem;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: blueviolet;
+    box-shadow: 0 0 6px blueviolet,0 0 6px blueviolet , 0 0 6px blueviolet,0 0 6px blueviolet;
+}
+
+.read-more-btn:hover
+{
+  background-color: white;
+  color: blueviolet;
+}
+
+.read-more-btn:active
+{
+  box-shadow: none;
+  border:1px solid blueviolet;
+}
+
+.card-icon
+{
+    font-size: large;
+}
+
+/* Service Section ends Here */
+
+/* ============================================Skills================================*/
+#skills {
+  width: 100dvw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  gap:25px;
+  background: rgb(250, 252, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#skills-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills h1
+{
+  font-size: 2rem;
+  opacity: 0;
+}
+#skills h1 span {
+  color: rgb(62, 111, 244);
+}
+
+#skills h1:hover
+{
+  background-color: navy;
+  color:white;
+}
+
+
+/* technical skill section id selector */
+#tech-skills {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 32px;
+}
+
+/* professional skill section id selector */
+#prof-skills {
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 4px 32px;
+}
+
+
+/* technical skill box */
+.skill-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 8px;
+  height: 60px;
+  opacity: 0;
+}
+
+
+/* hover effect on it */
+.skill-box:hover
+{
+  box-shadow: 0 0 35px cornflowerblue;
+}
+
+.skill-box section {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0px 8px;
+}
+
+
+/* linear progress bar the width will be decided on inline css */
+.linear-progess-bar {
+  height: 5px;
+  border-radius: 2px;
+  background-color: rgb(62, 111, 244);
+}
+
+
+/* professional skill box */
+.prof-skill-box {
+  position: relative;
+  width: 31%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(71, 151, 198, 0.15);
+  border-radius: 8px;
+  padding: 24px 4px;
+  text-align: center;
+  font-size:.8rem;
+  opacity: 0;
+}
+
+/* hover effect on prof skill box */
+.prof-skill-box:hover
+{
+  box-shadow: 0 0 35px cornflowerblue;
+}
+
+
+/* svg on .prof-skill-box */
+.prof-skill-box svg {
+  width: 120px;
+  height: 120px;
+}
+
+
+/* first circle that will show the bar  */
+.circular-progress-bar {
+  stroke: rgba(14, 36, 49, 0.15);
+  stroke-width: 10;
+  stroke-dasharray: 502;
+  stroke-linecap: round;
+  /*  this decides that circle will be complete or not 0 means complete 502 means nothing */
+  stroke-dashoffset: 0;
+  fill: transparent;
+}
+
+/* second circle that will fill the bar with  the percentage provided  */
+.path {
+  stroke: rgb(62, 111, 244);
+  stroke-width: 10;
+  stroke-dasharray: 502;
+  stroke-linecap: round;
+  fill: transparent;
+
+  /* The stroke stroke-dashoffset will be decided on inline css */
+}
+
+/* percetage will be shown in the center of circle */
+.percentage
+{
+  position: absolute;
+  top:60px;
+  left:1;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+
+/*================================================Project =================================*/
+
+#Portfolio {
+  background: rgb(250, 252, 255);
+  width: 100dvw;
+  padding: 44px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+#Portfolio h2
+{
+  font-size: 2rem;
+}
+
+#Portfolio h2:hover
+{
+  color: white;
+  width: fit-content;
+  background-color: navy;
+}
+
+#Portfolio h2 span
+{
+  color:blueviolet
+}
+
+
+/* project cards containing section */
+#project-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  flex: 2 2 310px;
+  width: 100%;
+  padding: 4px 15px;
+}
+
+
+/* Project cards */
+.project-sub-section {
+  position: relative;
+  width: 31%;
+  height: 360px;
+  background: #000;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: rgb(242, 247, 250);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  gap:4px;
+  opacity: 0;
+}
+
+
+/* project image */
+.project-img
+{
+  width: 100%;
+  height: 83%;
+  /* this take all the left space */
+  object-fit: cover;  
+}
+
+.project-sub-section h3
+{
+  width: 100%;
+  background: rgb(230, 231, 244);
+  font-size: .9rem;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 4px;
+}
+.project-sub-section div
+{
+  background: rgb(248, 248, 255);
+  padding: 5px 6px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* project github link btn */
+.github-link
+{
+    color: white;
+    border-radius: 4px;
+    background-color: #444;
+    font-size: small;
+    padding: 4px 6px;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px 2px rgb(195, 213, 244);
+    background-color: cornflowerblue;
+}
+.github-link:hover
+{
+  color:cornflowerblue;
+  background: white;
+  border:2px solid cornflowerblue;
+}
+
+/* project card hovering */
+.project-sub-section:hover
+{
+  box-shadow: 0 0 35px rgb(185, 202, 235);
+}
+
+
+
+/* ==================================================Contact====================== */
+
+#Contact {
+  padding: 48px;
+  height: 100%;
+  width: 100dvw;
+  text-align: center;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+
+#Contact > p{
+  opacity: 0;
+}
+
+/* deatails id selector like phoneNo email and city */
+#contact-details-section
+{
+  display: flex;
+  width:100%;
+  padding: 24px 14px;
+  flex-direction: row;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  height:fit-content;
+  text-align: left;
+}
+
+
+.contact-box
+{
+  display: flex;
+  flex-direction: column;
+  gap:4px;
+  font-weight: 500;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0;
+}
+
+
+/* for heading icons like Email PhoneNo and City */
+.head i
+{
+  color: rgb(110, 87, 224);
+}
+
+/* for heading like Email PhoneNo and City */
+.head
+{
+  font-size: 1rem;
+}
+
+
+/* for info like Email PhoneNo and City */
+.tail
+{
+  font-size: .8rem;
+  color: rgb(112, 113, 132);
+}
+
+/* heading */
+#Contact h2 {
+  font-size: 2rem;
+  opacity: 0;
+}
+
+#Contact h2 span {
+  color: blueviolet;
+}
+
+
+/* contact me form */
+#contact-form {
+  padding: 24px 12px;
+  display: flex;
+  width: 60%;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+/* form div */
+.contact-form-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border: 1px soldi black;
+}
+
+
+/* form inputs */
+.form-input {
+  padding: 10px 8px;
+  width: 100%;
+  font-size: small;
+  background-color: rgb(232, 233, 255);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  color: rgb(84, 11, 151);
+}
+.form-input:focus {
+  outline: 2px solid blueviolet;
+  border-radius: 2px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1)) !important;
+}
+
+/* form submit button */
+#submit-btn {
+  width: fit-content;
+  padding: 6px 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid blueviolet;
+  outline: none;
+  background: blueviolet;
+  color: white;
+  box-shadow: 0 0 2px blueviolet, 0 0 5px blueviolet, 0 0 8px blueviolet,
+    0 0 12px blueviolet;
+  opacity: 0;
+}
+
+#submit-btn:hover
+{
+  background-color: #fff;
+  color: blueviolet;
+}
+
+#submit-btn:active
+{
+  box-shadow: none;
+}
+
+
+/* message box input */
+#message-box {
+  padding: 12px;
+  width: 100%;
+  font-weight: 600;
+  background-color: rgb(199, 205, 253);
+  border: none;
+  outline: none;
+}
+
+#message-box::placeholder {
+  color: rgb(84, 11, 151);
+}
+
+#message-box:focus {
+  outline: 2px solid blueviolet;
+  border-radius: 2px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1)) !important;
+}
+
+
+/* ===================================Footer================================== */
+
+footer {
+  width: 100%;
+  height: fit-content;
+  padding: 4px;
+  background: rgb(24, 27, 27);
+  color: white;
+}
+
+#footer-article {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex: 2 2 310px;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  padding: 24px;
+  width: 32.4%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+}
+
+.footer-box h2 {
+  font-size: large;
+}
+
+.footer-box ul
+{
+  display: flex;
+  flex-direction: column;
+  gap:4px;
+}
+
+.footer-box ul li a {
+  color: white !important;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 2px;
+}
+
+.footer-box a {
+  color: white;
+}
+
+#footer-links li a:hover
+{
+  border-bottom: 2px solid white;
+}
+
+#footer-links li a:active
+{
+  background: blueviolet;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: none;
+}
+
+
+#footer-social-links
+{
+  display: flex;
+  flex-direction: row;
+  gap:4px;
+}
+#footer-social-links a:hover{
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
+
+#footer-social-links a:active
+{
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
+
+#footer-social-links a {
+  border: 2px solid white !important;
+  border-radius: 50%;
+}
+
+.small-font {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-box ul li a:active
+{
+  border-bottom: 2px soid red;
+}
+
+/* Call div contains phoneNo and call btn */
+#call-div {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  opacity: 0;
+}
+
+/* calling btn */
+#call-btn {
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-weight: 600;
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+}
+
+#call-btn:hover{
+  box-shadow: none;
+  border: 2px solid blueviolet;
+  background-color: white;
+  color: blueviolet;
+  transform: translateY(4px);
+  transition: all ease 0.4s;
+}
+
+.font {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* copy right section */
+#CR-section {
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+  border-top: 1px solid white;
+  padding: 8px;
+  opacity: 0;
+}
+
+/* form in footer-box class element */
+.footer-box form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/* Message senbtn */
+#send-btn {
+  padding: 10px 12px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0;
+}
+
+#send-btn:hover{
+  border: 2px solid blueviolet;
+  background-color: white;
+  color: blueviolet;
+}
+
+
+/* footer message input box */
+#footer-message-box {
+  padding: 8px;
+  background-color: rgb(232, 233, 255);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+/* footer ends here */
+
+
+/* for bold font */
+.bold-font {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+}
+
+/* ============================================================media query=================== */
+
+
+/* max-width at 1200px  xx-large to small*/
+@media only screen and (max-width:1200px){
+
+  /* this will make the home element come in center */
+  #Home
+  {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* make home elements section width 50% */
+  #profile,#profile_Info
+  {
+    width: 50%;
+  }
+
+  /* Profile description width 90% */
+  #profile-desc
+  {
+    width:90%
+  }
+
+  /* Width of profile image in #About article width 80% */
+  #About .profile-img
+  {
+    width: 80%;
+  }
+
+  /* about decription width 60% */
+  #about-desc
+  {
+    width:60%
+  }
+
+
+  /* both the technical and professional skills section width 100% */
+  #tech-skills,#prof-skills
+  {
+    width: 100%;
+    gap:5px
+  }
+
+  /* this adjust the professional skill box height and font-size */
+  .prof-skill-box
+  {
+    min-height: fit-content;
+    font-size:.8rem;
+  }
+
+  /* card class element width 40% */
+  .cards
+  {
+    width:40%;
+  }
+}
+
+
+
+/* Max-width:1000px large to small */
+@media only screen and (max-width: 1000px) {
+
+  /* this make nav bar position from fixed to relative nav bar will be not fixed on top */
+  nav {
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 12px 2px;
+  }
+  
+  /* nav unorded list width 100% and flex-direction:  column and hide the nav-links */
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    height: 0;
+    padding: 12px 2px;
+  }
+
+  /* this is make narbar toggle btn visible */
+  #nav_toggler {
+    display: block;
+  }
+
+  /* removes margin of main from top */
+  main {
+    margin-top: 0;
+  }
+
+  /* this will change the flex-direction of home section; */
+  #Home
+  {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  /* width of profile info and image-div will change to 80% */
+  #profile,#profile_Info
+  {
+    width: 80%;
+  }
+
+  /* profile description width to 90% */
+  #profile-desc
+  {
+    width:90%
+  }
+
+  #About .profile-img
+  {
+    width: 60%;
+  }
+
+  #about-desc
+  {
+    width:100%
+  }
+
+
+  /* this will change the circular progress bar size */
+  .prof-skill-box svg 
+  {
+    width:100px;
+    width:100px;
+  }
+
+
+  /* this will change the width of prof-skill-box */
+  .prof-skill-box
+  {
+    width:47%
+  }
+  .certificate-card
+  {
+    width:40%
+  }
+
+  .project-sub-section
+  {
+    width: 45%;
+  }
+}
+
+/* max-width=768px  medium to small*/
+@media only screen and (max-width: 768px) {
+
+
+  #profile,#profile_Info
+  {
+    width: 100%;
+  }
+
+  #profile-desc
+  {
+    width:90%
+  }
+
+  /* this change the flex direction of about article to column and content come in center; */
+  #About
+  {
+    flex-direction: column;
+    gap:10px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 10px;
+  }
+
+  /* this make skill flex-direction: to column and comes in center; */
+  #skills-section
+  {
+    flex-direction: column-reverse;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* this will change the flex-direction:  of .certificate-card; */
+  #certification-section
+  {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    height: 100%;
+  }
+
+  .certificate-card{
+    width:90%;
+  }
+
+  /* this will change the flex direction of service cards */
+  #service-Section
+  {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    height: 100%;
+  }
+  .cards
+  {
+    width:80%
+  }
+
+  /* this will contact contents comes in center */
+  #contact
+  {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact-form
+  {
+    width:90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* this will change the contact info like email phoneNo city detail flex-direction:  to column; */
+  .contact-form-div
+  {
+    flex-direction: column;
+    gap:5px;
+  }
+
+  /* this will change the flex direction of column; */
+  #footer-article
+  {
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-box
+  {
+    width:100%;
+  }
+
+  #project-section 
+  {
+    flex-direction: column;
+  }
+
+  .project-sub-section
+  {
+    width: 95%;
+  }
+
+
+  #contact-details-section
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+  }
+}
+
+/*====================================== Animation ============================ */
+
+
+/* fadeIn animation class */
+.fadeIn
+{
+  animation: fade 1.2s ease-in-out 0.5s 1 forwards;
+}
+
+
+/* COming-In animation class */
+.Coming-In
+{
+  animation: Coming 1.2s ease-in-out 0s 1 forwards;
+}
+
+/* zoom-out animation class */
+.zoom-out
+{
+  animation: Zoom .8s ease-in-out 0s 1 forwards;
+}
+
+
+/* Coming animation name */
+/* this will change the opacity and translate the element on y-axis*/
+@keyframes Coming{
+
+  /* At 0% it make the element  opacity 0 and translate the element on y-axis -100px */
+  0%
+  {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  /* At 100% it make the element  opacity 1 and translate the element on its initial position on y-axis */
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+/* animation fade this will change the opacity and translate the element on x-axis*/
+@keyframes fade {
+  /* At 0% it make the element  opacity 0 and translate the element on x-axis */
+  0%
+  {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  /* At 50% it make the element  opacity 0.5 and translate the element on its initial position on x-axis */
+  50%
+  {
+    opacity: 0.6;
+    transform: translateX(0px);
+  }
+  /* At 100% it make the element  opacity 1 */
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+
+/* Animation zoom this will scale the element size makeig the zoom like animation */
+@keyframes Zoom {
+  /* at 0% this make element opacity 0 and decrease the element size */
+  0%
+  {
+    opacity: 0;
+    transform: scale(.7);
+  }
+  /* at 100% this will make opacity 1 and make the element size normal*/
+  100%
+  {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
